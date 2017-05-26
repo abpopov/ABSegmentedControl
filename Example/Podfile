@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ABSegmentedControl_Example' do
+  pod 'ABSegmentedControl', :path => '../'
+
+  target 'ABSegmentedControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
