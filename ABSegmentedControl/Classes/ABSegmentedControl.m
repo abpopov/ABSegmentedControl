@@ -56,8 +56,10 @@
 
 
 - (void)baseInit {
-    self.clipsToBounds = YES;
+    self.clipsToBounds = NO;
     self.layer.masksToBounds = NO;
+    
+    self.backgroundColor= [UIColor clearColor];
     self.stateViews = [[NSMutableArray alloc] init];
     self.stateViewContainers = [[NSMutableArray alloc] init];
     self.changedViews = [[NSMutableSet alloc] init];
@@ -88,7 +90,7 @@
     self.textFont = [UIFont systemFontOfSize:14];
     self.transitionStyle = ABSegmentedControlTransitionStyleFade;
     self.shapeStyle = ABSegmentedControlShapeStyleLiquid;
-    self.applyCornerRadiusToSelectorView = NO;
+    self.applyCornerRadiusToSelectorView = YES;
     self.gradientBounceColor = [UIColor redColor];
     self.gradientBackVelocity = 1;
     self.shadowsEnabled = YES;

@@ -271,6 +271,7 @@ typedef NS_ENUM(NSUInteger, ABSegmentedControlBounce) {
  */
 @property (nonatomic, assign) BOOL shadowsEnabled;
 
+
 /**
  *  @brief Reload all data of control.
  */
